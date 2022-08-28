@@ -118,33 +118,21 @@ svg {
   }
 }
 
-.container {
-  --max-width: 1110px;
-  --padding: 1rem;
-  
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-  margin-inline: auto;
-}
-
-.even-columns {
-  display: grid;
-  gap: 1rem;
-
-}
-
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
-
 /* General Styling */
 
 body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-neutral-400);
+}
+
+p:not([class]) {
+  opacity: .7;
+  max-width: 32ch;
+}
+
+p[data-width="wide"] {
+  max-width: 45ch;
 }
 
 /* Button */
@@ -340,6 +328,33 @@ body {
 .padding-block-700 {
   padding-block: var(--size-700);
 }
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+  
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+    /* Inspired by Andy Bell */
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 4em);
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
 .display-sm-none {
   display: none;
 }
