@@ -56,7 +56,7 @@ nav ul li a:hover{
     position: relative;
     width: 380px;
     height: auto;
-    margin: 20px 0;
+    margin: 20px 10px;
     cursor: pointer;
     transition: 1s ease;
     background-color: white;
