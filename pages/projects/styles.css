@@ -50,7 +50,7 @@ nav ul li a:hover{
     background-repeat: repeat;
     background-size: cover;
     background-position: center center;
-    background-image: url("/images/bg1.jpg");
+    background-image: url("/Karl-Dot-Shrouder/images/bg1.jpg");
 }
 #my-cards .card {
     position: relative;
