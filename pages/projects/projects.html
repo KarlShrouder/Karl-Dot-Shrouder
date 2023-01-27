@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="hero">
       <nav>
-        <img src="/Karl-Dot-Shrouder/images/logo.png" class="logo" />
+        <img src="/images/logo.png" class="logo" />
         <ul>
           <li><a href="/Karl-Dot-Shrouder/index.html">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -19,15 +23,44 @@
         </ul>
       </nav>
 
-      <div class="container">
-        <ul>
-          <li><a href="calculator/calculator.html">CALCULATOR</a></li>
-          <li><a href="math-for-kids/index.html">MATH4KIDS</a></li>
-          <li><a href="#">???</a></li>
-          <li><a href="#">???</a></li>
-          <li><a href="#">???</a></li>
-        </ul>
-      </div>
+      <section id="my-cards">
+        <!-- Calculator card -->
+        <div class="card" id="calculator">
+          <img class="image" src="/images/c1.jpg" alt="" />
+          <div style="padding: 20px">
+            <h1>Simple Calculator</h1>
+          </div>
+          <div class="middle">
+            <div>
+              <i
+                class="fa-solid fa-calculator"
+                style="font-size: 70px; color: orange"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- MATH4KIDS Card -->
+        <div class="card" id="math">
+          <img class="image" src="/images/c2.jpg" alt="" />
+          <div style="padding: 20px">
+            <h1>MATH4KIDS</h1>
+            <p>
+              Math problems for kids, flashcard style! From addition to
+              division, kids can learn simple math with varrying difficulty.
+            </p>
+          </div>
+          <div class="middle">
+            <div>
+              <i
+                class="fa-solid fa-child-reaching"
+                style="font-size: 70px; color: orange"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

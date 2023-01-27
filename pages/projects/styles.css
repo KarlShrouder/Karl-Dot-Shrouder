@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+body {
+    box-sizing: border-box;
+}
+
 .hero{
     position: relative;
     width: 100%;
@@ -34,4 +38,62 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #c65cf8;
+}
+
+#my-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("/images/bg1.jpg");
+}
+#my-cards .card {
+    position: relative;
+    width: 380px;
+    height: auto;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 1s ease;
+    background-color: white;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.5);
+}
+#my-cards .card:hover {
+    transform: scale(1.1);
+}
+#my-cards .card img {
+    width: 100%;
+}
+
+#my-cards .card:hover .image {
+    -webkit-filter:brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#my-cards .middle {
+    position: absolute;
+    top: 35%;
+    left: 3%;
+}
+
+@media(max-width:768px) {
+    #my-cards .card {
+        width: 95%;
+    }
+    #my-cards .card:hover {
+        transform: scale(1);
+    }
+    #my-cards .middle {
+        position: absolute;
+        top: 60%;
+        left: 3%;
+    }
 }
